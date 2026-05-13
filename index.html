@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HABIT – Navegue por tópicos de interesse, categorias e postagens em destaque." />
+  <title>HABIT – Início</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/index-page.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html" aria-label="HABIT – Página inicial">HABIT</a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="index.html" aria-current="page">Início</a>
+        <a href="listagem.html">Páginas</a>
+        <a href="destaques.html">Destaques</a>
+        <a href="assinar.html">Assinar</a>
+        <a href="admin-categorias.html" class="nav-admin">Admin</a>
+      </nav>
+      <div class="header-search">
+        <label for="search-home" class="sr-only">Buscar conteúdo</label>
+        <input
+          class="search-input"
+          type="search"
+          id="search-home"
+          name="q"
+          placeholder="Buscar..."
+          aria-label="Buscar conteúdo"
+        />
+        <a href="busca.html" class="btn btn-outline btn-sm" aria-label="Ir para a busca">Buscar</a>
+        <a href="entrar.html" class="btn btn-ghost btn-sm">Entrar</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteudo Principal -->
+  <main id="main-content" class="page-wrapper">
+    <div class="content-card">
+
+      <!-- Hero -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-text">
+          <h1 id="hero-heading">Navegue por tópicos de interesse</h1>
+          <p>Descubra conteúdos por categorias, posts em destaque e as escolhas do editor.</p>
+          <div class="hero-actions">
+            <a href="listagem.html" class="btn btn-primary">Explorar categorias</a>
+            <a href="assinar.html" class="btn btn-outline">Assine a newsletter</a>
+          </div>
+        </div>
+        <div class="hero-image" role="img" aria-label="Imagem ilustrativa do hero"></div>
+      </section>
+
+      <!-- Categorias Populares -->
+      <section aria-labelledby="popular-heading">
+        <h2 id="popular-heading" class="section-title">Categorias Populares</h2>
+        <div class="popular-grid" role="list">
+          <article class="popular-card" role="listitem">
+            <div class="popular-card-img" role="img" aria-label="Imagem da categoria Work"></div>
+            <a href="listagem.html" class="popular-card-label">Work</a>
+          </article>
+          <article class="popular-card" role="listitem">
+            <div class="popular-card-img" role="img" aria-label="Imagem da categoria Books"></div>
+            <a href="listagem.html" class="popular-card-label">Books</a>
+          </article>
+          <article class="popular-card" role="listitem">
+            <div class="popular-card-img" role="img" aria-label="Imagem da categoria Techno"></div>
+            <a href="listagem.html" class="popular-card-label">Techno</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Todas as Categorias -->
+      <section aria-labelledby="all-cat-heading">
+        <h2 id="all-cat-heading" class="section-title">Todas as Categorias</h2>
+        <nav class="all-categories" aria-label="Todas as categorias">
+          <div class="categories-grid">
+            <a href="listagem.html" class="category-cell">Negócios</a>
+            <a href="listagem.html" class="category-cell">Techno</a>
+            <a href="listagem.html" class="category-cell">Produtividade</a>
+            <a href="listagem.html" class="category-cell">Filmes</a>
+            <a href="listagem.html" class="category-cell">Lifestyle</a>
+            <a href="listagem.html" class="category-cell">Educação</a>
+            <a href="listagem.html" class="category-cell">Mailing</a>
+            <a href="listagem.html" class="category-cell">eCommerce</a>
+            <a href="listagem.html" class="category-cell">Alimentação</a>
+            <a href="listagem.html" class="category-cell">Social</a>
+          </div>
+        </nav>
+      </section>
+
+      <!-- Postagens em Destaque e Escolhas do Editor -->
+      <div class="bottom-section">
+        <section aria-labelledby="featured-heading">
+          <h2 id="featured-heading" class="section-title">Postagens em Destaque</h2>
+          <div class="post-list">
+            <article class="post-card">
+              <div class="img-placeholder-sq" role="img" aria-label="Imagem do post"></div>
+              <div class="post-card-info">
+                <p class="post-meta">31 Jul 2025 • Destaque</p>
+                <h3 class="post-title"><a href="#">Erros de Design que Todos Devem Evitar</a></h3>
+                <p class="post-read-time">3 min de leitura</p>
+              </div>
+            </article>
+            <article class="post-card">
+              <div class="img-placeholder-sq" role="img" aria-label="Imagem do post"></div>
+              <div class="post-card-info">
+                <p class="post-meta">31 Jul 2025 • Destaque</p>
+                <h3 class="post-title"><a href="#">As Maiores Empresas por Receita</a></h3>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <aside aria-labelledby="editor-heading">
+          <div class="editor-box">
+            <h2 id="editor-heading">Escolhas do Editor</h2>
+            <ul>
+              <li><a href="#">O uso negativo da internet</a></li>
+              <li><a href="#">O segredo do brainstorm</a></li>
+              <li><a href="#">Escalar para pequenos negócios</a></li>
+              <li><a href="#">O futuro do trabalho remoto</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="site-footer" role="contentinfo">
+    <nav class="footer-links" aria-label="Links do rodapé">
+      <a href="#">Instagram</a>
+      <a href="#">Work</a>
+      <a href="#">Bags</a>
+      <a href="#">Lamp</a>
+      <a href="#">Books</a>
+    </nav>
+    <p class="footer-copy">© 2025 Meu Site • <a href="#">Meu site</a></p>
+  </footer>
+
+</body>
+</html>
