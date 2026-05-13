@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HABIT – Resultados de busca." />
+  <title>HABIT – Busca</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .search-results-title {
+      font-family: var(--font-display);
+      font-size: var(--text-h1);
+      color: var(--color-text);
+      margin-bottom: var(--space-xl);
+    }
+
+    .search-results-title em {
+      font-style: normal;
+    }
+
+    .result-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+
+    .result-card {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      padding: var(--space-md);
+      background: var(--color-bg-white);
+      transition: box-shadow 0.2s;
+    }
+
+    .result-card:hover { box-shadow: var(--shadow-md); }
+    .result-card:focus-within { outline: 2px solid var(--color-primary); }
+
+    .result-info { flex: 1; }
+
+    .result-title {
+      font-size: var(--text-sm);
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: var(--space-xs);
+    }
+
+    .result-title a:hover { color: var(--color-primary); }
+    .result-title a:focus { outline: 2px solid var(--color-primary); border-radius: 2px; }
+
+    .result-meta {
+      font-size: var(--text-xs);
+      color: var(--color-text-muted);
+    }
+
+    @media (max-width: 480px) {
+      .search-results-title { font-size: 1.4rem; }
+      .img-placeholder-sq { width: 56px; height: 44px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a class="site-logo" href="index.html" aria-label="HABIT – Página inicial">HABIT</a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="listagem.html">Páginas</a>
+        <a href="destaques.html">Destaques</a>
+        <a href="assinar.html">Assinar</a>
+        <a href="admin-categorias.html" class="nav-admin">Admin</a>
+      </nav>
+      <div class="header-search">
+        <label for="search-busca" class="sr-only">Buscar</label>
+        <input class="search-input" type="search" id="search-busca" name="q" placeholder="Buscar..." value="trabalho remoto" />
+        <button class="btn btn-outline btn-sm" type="submit">Buscar</button>
+        <a href="entrar.html" class="btn btn-ghost btn-sm">Entrar</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-wrapper">
+    <div class="content-card">
+      <h1 class="search-results-title">Resultados para: "trabalho remoto"</h1>
+
+      <section aria-label="Resultados da busca">
+        <div class="result-list" role="list">
+          <article class="result-card" role="listitem">
+            <div class="img-placeholder-sq" role="img" aria-label="Imagem do resultado"></div>
+            <div class="result-info">
+              <h2 class="result-title"><a href="#">Resultado 1: título de exemplo</a></h2>
+              <p class="result-meta">Categoria • 31 Jul 2025</p>
+            </div>
+          </article>
+          <article class="result-card" role="listitem">
+            <div class="img-placeholder-sq" role="img" aria-label="Imagem do resultado"></div>
+            <div class="result-info">
+              <h2 class="result-title"><a href="#">Resultado 2: título de exemplo</a></h2>
+              <p class="result-meta">Categoria • 31 Jul 2025</p>
+            </div>
+          </article>
+          <article class="result-card" role="listitem">
+            <div class="img-placeholder-sq" role="img" aria-label="Imagem do resultado"></div>
+            <div class="result-info">
+              <h2 class="result-title"><a href="#">Resultado 3: título de exemplo</a></h2>
+              <p class="result-meta">Categoria • 31 Jul 2025</p>
+            </div>
+          </article>
+          <article class="result-card" role="listitem">
+            <div class="img-placeholder-sq" role="img" aria-label="Imagem do resultado"></div>
+            <div class="result-info">
+              <h2 class="result-title"><a href="#">Resultado 4: título de exemplo</a></h2>
+              <p class="result-meta">Categoria • 31 Jul 2025</p>
+            </div>
+          </article>
+          <article class="result-card" role="listitem">
+            <div class="img-placeholder-sq" role="img" aria-label="Imagem do resultado"></div>
+            <div class="result-info">
+              <h2 class="result-title"><a href="#">Resultado 5: título de exemplo</a></h2>
+              <p class="result-meta">Categoria • 31 Jul 2025</p>
+            </div>
+          </article>
+          <article class="result-card" role="listitem">
+            <div class="img-placeholder-sq" role="img" aria-label="Imagem do resultado"></div>
+            <div class="result-info">
+              <h2 class="result-title"><a href="#">Resultado 6: título de exemplo</a></h2>
+              <p class="result-meta">Categoria • 31 Jul 2025</p>
+            </div>
+          </article>
+          <article class="result-card" role="listitem">
+            <div class="img-placeholder-sq" role="img" aria-label="Imagem do resultado"></div>
+            <div class="result-info">
+              <h2 class="result-title"><a href="#">Resultado 7: título de exemplo</a></h2>
+              <p class="result-meta">Categoria • 31 Jul 2025</p>
+            </div>
+          </article>
+          <article class="result-card" role="listitem">
+            <div class="img-placeholder-sq" role="img" aria-label="Imagem do resultado"></div>
+            <div class="result-info">
+              <h2 class="result-title"><a href="#">Resultado 8: título de exemplo</a></h2>
+              <p class="result-meta">Categoria • 31 Jul 2025</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <nav class="footer-links" aria-label="Links do rodapé">
+      <a href="#">Instagram</a><a href="#">Work</a><a href="#">Bags</a><a href="#">Lamp</a><a href="#">Books</a>
+    </nav>
+    <p class="footer-copy">© 2025 Meu Site • <a href="#">Meu site</a></p>
+  </footer>
+
+  <style>.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}</style>
+</body>
+</html>
