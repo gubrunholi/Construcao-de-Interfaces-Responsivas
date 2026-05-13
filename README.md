@@ -10,10 +10,6 @@ O projeto foi construído aplicando conceitos de semântica HTML, acessibilidade
 
 ---
 
-# 🚧 Em desenvolvimento . . .
-
----
-
 # 📚 Índice/Sumário
 
 - [Sobre](#sobre-o-projeto)
